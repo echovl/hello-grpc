@@ -1,5 +1,11 @@
 # hello-grpc
 
+## Generate grpc server
+
+```sh
+$ buf generate ./proto
+```
+
 ## Run tests
 
 ```sh
