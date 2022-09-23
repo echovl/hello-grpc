@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package hello.v1;
+
+option go_package = "github.com/echovl/hello-grpc/gen/proto/hello/v1;hellov1";
+
+message HelloRequest {
+    string username = 1;
+}
+
+message HelloResponse {
+    string msg = 1;
+}
+
+service HelloService {
+    rpc Hello(HelloRequest) returns (HelloResponse) {}
+}
